@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:background="@drawable/background"
+        android:layout_marginTop="300dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView1"
+        android:layout_width="305dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_corners"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:itemIconSize="20dp"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/item_list"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="541dp"
+        android:layout_above="@+id/bottomNavigationView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dashboard"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc1"
+            android:textColor="#fff"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#600A0A0A"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Summary"
+                        android:textColor="#ECD71B"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <ScrollView
+                        android:layout_width="339dp"
+                        android:layout_height="589dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="0dp" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient_homepage"
+                android:clickable="true"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_homepage"
+                    android:clickable="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/taskImage"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_tasks_tick" />
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="34dp"
+                        android:layout_toRightOf="@+id/taskImage"
+                        android:text="Tasks to Complete"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="47dp"
+                        android:layout_height="66dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="-9dp"
+                        android:layout_marginBottom="2dp"
+                        android:clickable="true"
+                        android:src="@drawable/ic_right_arrow" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient_homepage"
+                android:clickable="true"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/tb_calendar_bg"
+                    android:clickable="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/timetableImage"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_timetable_home" />
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toRightOf="@+id/timetableImage"
+                        android:text="Check Your Timetable!"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="47dp"
+                        android:layout_height="66dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="-9dp"
+                        android:layout_marginBottom="2dp"
+                        android:clickable="true"
+                        android:src="@drawable/ic_right_arrow" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grid_background"
+                android:clickable="true"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/grid_background"
+                    android:clickable="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/timetableImage1"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_notes_home" />
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_toRightOf="@+id/timetableImage1"
+                        android:text="Write Your Notes!"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="47dp"
+                        android:layout_height="66dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="-9dp"
+                        android:layout_marginBottom="2dp"
+                        android:clickable="true"
+                        android:src="@drawable/ic_right_arrow" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

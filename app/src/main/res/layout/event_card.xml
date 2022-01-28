@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_viewTimetable"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    tools:context=".TimeTable.timetable_add_reminder">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cView_event"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingRight="10dp"
+        app:cardBackgroundColor="#C8F8E3"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_title"
+            android:drawablePadding="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Title"
+            android:textColor="#000"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+
+        <TextView
+            android:id="@+id/tb_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="44dp"
+            android:drawableStart="@drawable/tb_clock"
+            android:drawablePadding="5dp"
+            android:text="Time"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <TextView
+            android:id="@+id/tb_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="44dp"
+            android:drawableStart="@drawable/ic_tb_calendar"
+            android:drawablePadding="5dp"
+            android:text="Date"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/delete_e_timetable"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/ic_baseline_more_vert_24" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

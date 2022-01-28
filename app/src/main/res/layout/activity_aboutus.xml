@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineAmbientShadowColor="@android:color/transparent"
+    android:background="@color/OnePlanOrange"
+    tools:context=".aboutus">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        android:layout_gravity="top"
+        android:gravity="top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                app:cardBackgroundColor="@color/OnePlanOrange"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:outlineAmbientShadowColor="@android:color/transparent"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-black"
+                    android:text="About Us"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/ab_btnBackTo_dash"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:rotationY="180"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_arow_white"
+                    android:rotation="180"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            app:cardBackgroundColor="@color/white">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/aboutus14"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            app:cardBackgroundColor="@color/white">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/aboutus16"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="60dp"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            app:cardBackgroundColor="@color/white">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/aboutus15"/>
+
+            <TextView
+                android:id="@+id/txtFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:gravity="left"
+                android:textColorLink="#0055FF"
+                android:layout_marginLeft="100dp"
+                android:text="@string/facebook" />
+
+            <TextView
+                android:id="@+id/txtInstagram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="135dp"
+                android:gravity="left"
+                android:textColorLink="#F700FF"
+                android:layout_marginLeft="100dp"
+                android:text="@string/instagram" />
+
+            <TextView
+                android:id="@+id/txtTwitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:gravity="left"
+                android:textColorLink="#007BFF"
+                android:layout_marginLeft="100dp"
+                android:text="@string/twitter" />
+
+            <TextView
+                android:id="@+id/txtYoutube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="230dp"
+                android:gravity="left"
+                android:textColorLink="#FF0000"
+                android:layout_marginLeft="100dp"
+                android:text="@string/youtube" />
+
+            <TextView
+                android:id="@+id/txtDiscord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="280dp"
+                android:gravity="left"
+                android:layout_marginLeft="100dp"
+                android:textColorLink="#662FFF"
+                android:text="@string/discord" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="370dp"
+                android:gravity="center"
+                android:autoLink="email"
+                android:text="teamoneplan@outlook.com" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OnePlan V1.0"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="520dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Created and Owned By"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="545dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" ⓒ Group Innovation"
+                android:gravity="center"
+                android:textColor="#0099FF"
+                android:layout_marginTop="570dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

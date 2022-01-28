@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboard"
+        android:icon="@drawable/bn_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/timetable"
+        android:icon="@drawable/bn_timetable"
+        android:title="TimeTable"/>
+
+    <item
+        android:id="@+id/notes"
+        android:icon="@drawable/bn_notes"
+        android:title="Notes"/>
+
+    <item
+        android:id="@+id/timer"
+        android:icon="@drawable/bn_timer"
+        android:title="Timer"/>
+
+
+    <item
+        android:id="@+id/todolist"
+        android:icon="@drawable/bn_task"
+        android:title="Tasks"/>
+
+
+</menu>

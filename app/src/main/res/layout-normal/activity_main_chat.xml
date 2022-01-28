@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".mymessagingapp.MainActivity_chat"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/layout_appbar"
+        android:layout_width="match_parent"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:background="@color/OnePlanOrange"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000"
+            app:tabIndicatorColor="@color/black"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:tabTextColor="@color/white" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="547dp"
+        android:layout_above="@+id/btm_navigation_layout"
+        android:layout_below="@+id/layout_appbar"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/btm_navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/chat_nav"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corners_btm_chat"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            app:itemRippleColor="@color/OnePlanOrange"
+            app:itemIconSize="25dp"
+            app:itemIconTint="#fff"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/chatmenu">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".Timer.timer">
+
+        <TextView
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Set Your Timer"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:id="@+id/asnbb"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/lassd"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_storefront" />
+
+
+        </LinearLayout>
+
+        <Chronometer
+            android:id="@+id/timerHere"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="295dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:gravity="center"
+            android:textColor="#DC774F"
+            android:textSize="70sp" />
+
+        <SeekBar
+            android:id="@+id/processbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:thumb="@drawable/thumb1" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/processbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="start_timer"
+            android:text="Start"
+            android:textSize="30sp"
+            app:backgroundTint="#DC774F"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnStart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Stop"
+            android:textSize="30sp"
+            app:backgroundTint="#BA70B6" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/timer_nav"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_corners_btm"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            app:itemIconSize="20dp"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/item_list">
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notesbackground"
+    tools:context=".Notes.editnoteactivity">
+
+    <Button
+        android:id="@+id/btnBack_Edit_Note"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_tb_arrow"
+        android:layout_alignParentStart="true"
+        android:rotation="180"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-40dp"
+        android:layout_toStartOf="@+id/edittitleofnote" />
+
+    <EditText
+        android:id="@+id/edittitleofnote"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/notesbackground"
+        android:hint="Title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editcontentofnote"
+        android:layout_width="360dp"
+        android:layout_height="587dp"
+        android:layout_below="@+id/edittitleofnote"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/notesbackground"
+        android:gravity="top"
+        android:hint="Write Your Content"
+        android:lines="4"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"
+        android:paddingRight="10dp"
+        android:textColor="#000"
+        android:textColorHint="@color/colorPrimary" />
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/saveeditnote"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="155dp"
+        android:background="@color/white"
+        android:src="@drawable/arrowupbtn"
+        app:maxImageSize="209dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    tools:context=".mymessagingapp.MessageActivity">
+
+    <ImageView
+        android:id="@+id/imageview_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#000"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:id="@+id/appbar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBarMessage"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnBack_Chat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_right_arrow"
+                android:rotation="180"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/OnePlanOrange"
+                android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtReceiverName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/txtLastSeen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="last Seen:"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearBottom"
+        android:layout_width="419dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:clickable="true"
+            android:id="@+id/scanner_chatbox"
+            android:layout_width="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_scanner_for_chat" />
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="10"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/chat_rounded"
+            android:hint="Write Your Message"
+            android:padding="10dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="100000"
+            android:maxLines="6">
+
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="10dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/chat_send_rounded"
+            android:src="@drawable/ic_imessage_clicked" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearBottom"
+        android:layout_below="@+id/appbar"
+        android:id="@+id/recycularViewMessages"/>
+
+
+</RelativeLayout>
