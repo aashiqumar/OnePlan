@@ -1,6 +1,4 @@
-Designed to help users to plan and organize their day-to-day tasks without missing. This app is planned to be developed using an object-oriented programming language. The program will help the students manage their time efficiently, not only students, but any person in the world who lacks being productive. The App has beautiful UI we built and also, we used Firebase as the backend. Please support the work.
-
-# Flutter Tutorial - Database Storage Using Sqlite & Sqflite
+# OnePlan - Productiivty Tool App
 [![Youtube](https://img.shields.io/static/v1?label=JohannesMilke&message=Subscribe&logo=YouTube&color=FF0000&style=for-the-badge)][youtube]
 [![Twitter Follow](https://img.shields.io/twitter/follow/JohannesMilke?color=1DA1F2&label=Followers&logo=twitter&style=for-the-badge)][twitter]
 [![Newsletter](https://img.shields.io/static/v1?label=Follow&message=My%20Flutter%20Newsletter&color=5FB709&style=for-the-badge)][newsletter]
@@ -10,15 +8,9 @@ Designed to help users to plan and organize their day-to-day tasks without missi
 [![GitHub stars](https://img.shields.io/github/stars/JohannesMilke/sqflite_database_example.svg?style=social&label=Star)](https://github.com/JohannesMilke/sqflite_database_example)
 [![GitHub JohannesMilke](https://img.shields.io/github/followers/JohannesMilke?label=follow&style=social)](https://github.com/JohannesMilke)
 
-Persist data with Flutter's Sqflite Database locally on your Android or iOS device by using Raw SQL statements.
+Designed to help users to plan and organize their day-to-day tasks without missing. This app is planned to be developed using an object-oriented programming language. The program will help the students manage their time efficiently, not only students, but any person in the world who lacks being productive. The App has beautiful UI we built and also, we used Firebase as the backend. Please support the work.
 
 ### ✌&ensp;Preview
-
-|              App Preview             |             Course Preview           |
-| :----------------------------------: | :----------------------------------: |
-| <a href="https://www.youtube.com/watch?v=UpKrhZ0Hppk" target="_blank"><img src="preview.gif" width="350"></a> | <a href="https://johannesmilke.teachable.com/p/home" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/web-johannesmilke.appspot.com/o/other%2Fgithub_ad.png?alt=media" width="350"></a> |
-
-➜&ensp;[Buy My Courses](https://johannesmilke.teachable.com/p/home "Buy My Courses")
 
 ### 📺&ensp;Watch Video
 
