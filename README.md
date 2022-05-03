@@ -9,9 +9,7 @@
    </a>
    
 </div>
-  
-[![GitHub stars](https://img.shields.io/github/stars/JohannesMilke/sqflite_database_example.svg?style=social&label=Star)](https://github.com/aashiqumar/OnePlan)
-[![GitHub JohannesMilke](https://img.shields.io/github/followers/JohannesMilke?label=follow&style=social)](https://github.com/aashiqumar)
+
 
 Designed to help users to plan and organize their day-to-day tasks without missing. This app is planned to be developed using an object-oriented programming language. The program will help the students manage their time efficiently, not only students, but any person in the world who lacks being productive. The App has beautiful UI we built and also, we used Firebase as the backend. Please support the work. OnePlan is at its very early stages of development and will soon under go new UI update and implement some serious features for the App. The App is purely based for students who will be taking the best use of it.
 
